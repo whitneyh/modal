@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'modal';
+
+  isModelOpen: boolean = false;
+
+  toggleModal(): void {
+    this.isModelOpen = !this.isModelOpen;
+  }
 }
